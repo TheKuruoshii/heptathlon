@@ -1,3 +1,7 @@
+<?php 
+$liste_categorie = getAllCategorie();
+?>
+
 <html>
     <head>
         <title>Heptathlon</title>
@@ -26,6 +30,10 @@
                             Accueil
                         </a>
                     </li>
+                    <?php foreach($liste_categorie as $categories) : ?>
+                    <li><a href="categorie.php?id=<?php echo $categories["id"]?>"><?php echo $categories["libelle"] ?></a></li>
+                    <?php endforeach; ?>
+                    <li><a href="liste_sports.php">Sports</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>

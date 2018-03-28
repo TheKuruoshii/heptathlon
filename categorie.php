@@ -1,12 +1,16 @@
 <?php
-require_once 'model/database.php';
-$liste_produits = getAllProduits(3);
 
+require_once 'model/database.php';
+
+$id = $_GET["id"];
+
+$categorie = getCategorie($id);
+$liste_produits = getProduitByCategorie($id);
 
 require_once 'layout/header.php';
 ?>
 
-<h1>Bienvenue sur le site internet d'Heptathlon</h1>
+<h1><?php echo $categorie["libelle"] ?></h1>
 
 <section>
     <?php foreach ($liste_produits as $produit) : ?>
@@ -29,4 +33,4 @@ require_once 'layout/header.php';
     <?php endforeach; ?>
 </section>
 
-<?php require_once 'layout/footer.php'; ?>
+<?php require_once 'layout/footer.php' ?>
