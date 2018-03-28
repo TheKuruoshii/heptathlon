@@ -1,0 +1,103 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+nav .logo {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+nav .logo a {
+    color: #0082C3;
+}
+
+nav ul {
+    display: inline-block;  
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    transition: 0.5s;
+    display: inline-block;
+    background-color: #0082C3;
+}
+
+nav ul li:hover {
+    background-color: #005179;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #0082C3;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+img.thumbnail {
+    float: left;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 10px 10px 0;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background-color: #0082C3;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #005179;
+}
+
+article {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    background-color: lightgrey;
+    border: 2px solid darkgrey;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+article h2 {
+    margin-bottom: 10px;
+}
+
+article h3 {
+    margin-top: 0;
+    font-style: italic;
+}
+
+article h2, article h3 {
+    text-align: center;
+}
